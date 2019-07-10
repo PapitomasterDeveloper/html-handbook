@@ -20,8 +20,6 @@ Browsers learned to be resilient and to always try to do their best when parsing
 
 And the whole Web platform did one thing right: it never broke backward compatibility. Pretty incredibly, we can go back to HTML documents written in 1991, and they look pretty much as they looked back then.
 
-Given the evolution in browser UI default styling. <!-- I don't understand what this sentence is trying to say. -->
-
 We even know what the first web page was. It's this: http://info.cern.ch/hypertext/WWW/TheProject.html
 
 And you can see the source of the page, thanks to another big feature of the Web and HTML: **we can inspect the HTML of any web page**.
