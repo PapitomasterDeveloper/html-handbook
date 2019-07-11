@@ -53,7 +53,7 @@ Or you can load an external JavaScript file by using the `src` attribute:
 
 There is something pretty important to know about this tag.
 
-Sometimes this tag is used at the bottom  <!-- just before the closing </body>? --> of the page. Why? For performance reasons.
+Sometimes this tag is used at the bottom of the page, just before the closing `</body>` tag. Why? For performance reasons.
 
 Loading scripts by default blocks the rendering of the page until the script is parsed and loaded.
 
@@ -61,7 +61,7 @@ By putting it at the bottom of the page, the script is loaded and executed after
 
 My opinion is that this is now bad practice. Let `script` live in the `head` tag.
 
-In modern JavaScript we have an alternative this is more performant than keeping the script at the bottom of the page -- the `defer` attribute: <!-- you may want to say something here about absolute vs relative path references; maybe refer to the 'base' discussion further down the page -->
+In modern JavaScript we have an alternative this is more performant than keeping the script at the bottom of the page -- the `defer` attribute. This is an example that loads a `file.js` file, relative to the current URL: 
 
 ```html
 <script defer src="file.js"></script> 
@@ -181,8 +181,6 @@ As with the `link` tag, you can use the `media` attribute to use that CSS only o
 .some-css {}
 </style>
 ```
-
-You can also add this tag in the document body. Speaking of this, it's interesting the `scoped` attribute to only assign that CSS to the current document subtree. In other words, to avoid leaking the CSS outside of the parent element. <!-- these two sentences are not clear to me. Are you saying that when you use the style tag in the body, that the scope is restricted? if so, how is it restricted? maybe this is clarified somewhere else in the book -->
 
 ### The `base` tag
 
