@@ -29,7 +29,7 @@ Inside it we can have a wide variety of tags, depending on what you need to do:
 
 ### The `title` tag
 
-The `title` tag determines the page title. The title is displayed in the browser, and it's especially important as it's one of the key factors for Search Engine Optimization.
+The `title` tag determines the page title. The title is displayed in the browser, and it's especially important as it's one of the key factors for Search Engine Optimization (SEO).
 
 ### The `script` tag
 
@@ -53,21 +53,21 @@ Or you can load an external JavaScript file by using the `src` attribute:
 
 There is something pretty important to know about this tag.
 
-Sometimes this tag is used at the bottom of the page. Why? For performance reasons.
+Sometimes this tag is used at the bottom  <!-- just before the closing </body>? --> of the page. Why? For performance reasons.
 
 Loading scripts by default blocks the rendering of the page until the script is parsed and loaded.
 
-Doing so, the script is loaded and executed after the whole page is already parsed and loaded, giving a better experience to the user over keeping it in the `head` tag.
+By putting it at the bottom of the page, the script is loaded and executed after the whole page is already parsed and loaded, giving a better experience to the user over keeping it in the `head` tag.
 
 My opinion is that this is now bad practice. Let `script` live in the `head` tag.
 
-In modern JavaScript we have an alternative, more performant than keeping the script at the bottom of the page - `defer` attribute:
+In modern JavaScript we have an alternative this is more performant than keeping the script at the bottom of the page -- the `defer` attribute: <!-- you may want to say something here about absolute vs relative path references; maybe refer to the 'base' discussion further down the page -->
 
 ```html
-<script defer src="file.js"></script>
+<script defer src="file.js"></script> 
 ```
 
-This is the scenario that triggers the faster path to a fast loaded page, and a fast loaded JavaScript.
+This is the scenario that triggers the faster path to a fast-loading page, and fast-loading JavaScript.
 
 > Note: the `async` attribute is similar, but in my opinion a worse option than `defer`. I describe why, in more detail, on page  [https://flaviocopes.com/javascript-async-defer/](https://flaviocopes.com/javascript-async-defer/)
 
@@ -77,7 +77,7 @@ This tag is used to detect when scripts are disabled in the browser.
 
 > Note: users can choose to disable JavaScript scripts in the browser settings. Or the browser might not support them by default.
 
-It is used differently whether it's put in the document head, or in the document body.
+It is used differently depending on whether it's put in the document head or in the document body.
 
 We're talking about the document head now, so let's first introduce this usage.
 
@@ -141,7 +141,7 @@ The `media` attribute allows the loading of different stylesheets depending on t
 <link href="print.css" media="print" rel="stylesheet">
 ```
 
-We can link to different resources than stylesheets.
+We can also link to resources other than stylesheets.
 
 For example we can associate an RSS feed using
 
@@ -149,7 +149,7 @@ For example we can associate an RSS feed using
 <link rel="alternate" type="application/rss+xml" href="/index.xml">
 ```
 
-We can associate a favicon using:
+Or we can associate a favicon using:
 
 ```html
 <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -174,7 +174,7 @@ Usage:
 ```
 
 
-As with the `link` tag, you can use the `media` attribute to only use that CSS on the specified medium:
+As with the `link` tag, you can use the `media` attribute to use that CSS only on the specified medium:
 
 ```html
 <style media="print">
@@ -182,7 +182,7 @@ As with the `link` tag, you can use the `media` attribute to only use that CSS o
 </style>
 ```
 
-You can also add this tag in the document body. Speaking of this, it's interesting the `scoped` attribute to only assign that CSS to the current document subtree. In other words, to avoid leaking the CSS outside of the parent element.
+You can also add this tag in the document body. Speaking of this, it's interesting the `scoped` attribute to only assign that CSS to the current document subtree. In other words, to avoid leaking the CSS outside of the parent element. <!-- these two sentences are not clear to me. Are you saying that when you use the style tag in the body, that the scope is restricted? if so, how is it restricted? maybe this is clarified somewhere else in the book -->
 
 ### The `base` tag
 
@@ -252,7 +252,7 @@ You can also just tell Google instead of targeting *all* search engines:
 <meta name="googlebot" content="noindex, nofollow">
 ```
 
-and other search engines might have their own meta tag, too.
+And other search engines might have their own meta tag, too.
 
 Speaking of which, we can tell Google to disable some features. This prevents the translate functionality in the search engine results:
 
@@ -260,7 +260,7 @@ Speaking of which, we can tell Google to disable some features. This prevents th
 <meta name="google" content="notranslate">
 ```
 
-The `viewport` meta tag is used to tell the browser to set the page width depending on the device width.
+The `viewport` meta tag is used to tell the browser to set the page width based on the device width.
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -276,6 +276,6 @@ Another rather popular meta tag is the `http-equiv="refresh"` one. This line tel
 
 Using 0 instead of 3 will redirect as soon as possible.
 
-This is not a full reference, other less used meta tags exist.
+This is not a full reference; Other less-used meta tags exist.
 
 After this document heading introduction, we can start diving into the document body.
