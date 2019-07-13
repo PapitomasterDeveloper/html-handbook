@@ -33,4 +33,4 @@ Link tags can include other things inside them, not just text. For example, imag
 </a>
 ```
 
-or any other elements.
+or any other elements, except other `<a>` tags.
