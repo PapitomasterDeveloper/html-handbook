@@ -5,7 +5,7 @@ Images can be displayed using the `img` tag.
 This tag accepts a `src` attribute, which we use to set the image source:
 
 ```html
-<img src="image.png" />
+<img src="image.png">
 ```
 
 We can use a wide set of images. The most common ones are PNG, JPEG, GIF, SVG and more recently WebP.
@@ -13,13 +13,13 @@ We can use a wide set of images. The most common ones are PNG, JPEG, GIF, SVG an
 The HTML standard requires an `alt` attribute to be present, to describe the image. This is used by screen readers and also by search engine bots:
 
 ```html
-<img src="dog.png" alt="A picture of a dog" />
+<img src="dog.png" alt="A picture of a dog">
 ```
 
 You can set the `width` and `height` attributes to set the space that the element will take, so that the browser can account for it and it does not change the layout when it's fully loaded. It takes a numeric value, expressed in pixels.
 
 ```html
-<img src="dog.png" alt="A picture of a dog" width="300" height="200" />
+<img src="dog.png" alt="A picture of a dog" width="300" height="200">
 ```
 
 ## The `figure` tag

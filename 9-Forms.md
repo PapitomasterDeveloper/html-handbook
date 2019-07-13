@@ -64,25 +64,25 @@ The `input` field is one of the most widely used form elements. It's also a very
 The default behavior is to be a single-line text input control:
 
 ```html
-<input />
+<input>
 ```
 
 Equivalent to using:
 
 ```html
-<input type="text" />
+<input type="text">
 ```
 
 As with all the other fields that follow, you need to give the field a name in order for its content to be sent to the server when the form is submitted:
 
 ```html
-<input type="text" name="username" />
+<input type="text" name="username">
 ```
 
 The `placeholder` attribute is used to have some text showing up, in light gray, when the field is empty. Useful to add a hint to the user for what to type in:
 
 ```html
-<input type="text" name="username" placeholder="Your username" />
+<input type="text" name="username" placeholder="Your username">
 ```
 
 ### Email
@@ -90,7 +90,7 @@ The `placeholder` attribute is used to have some text showing up, in light gray,
 Using `type="email"` will validate client-side (in the browser) an email for correctness (semantic correctness, not ensuring the email address is existing) before submitting.
 
 ```html
-<input type="email" name="email" placeholder="Your email" />
+<input type="email" name="email" placeholder="Your email">
 ```
 
 ### Password
@@ -98,7 +98,7 @@ Using `type="email"` will validate client-side (in the browser) an email for cor
 Using `type="password"` will make every key entered appear as an asterisk (*) or dot, useful for fields that host a password.
 
 ```html
-<input type="password" name="password" placeholder="Your password" />
+<input type="password" name="password" placeholder="Your password">
 ```
 
 ### Numbers
@@ -106,19 +106,19 @@ Using `type="password"` will make every key entered appear as an asterisk (*) or
 You can have an input element accept only numbers:
 
 ```html
-<input type="number" name="age" placeholder="Your age" />
+<input type="number" name="age" placeholder="Your age">
 ```
 
 You can specify a minimum and maximum value accepted:
 
 ```html
-<input type="number" name="age" placeholder="Your age" min="18" max="110" />
+<input type="number" name="age" placeholder="Your age" min="18" max="110">
 ```
 
 The `step` attribute helps identify the steps between different values. For example this accepts a value between 10 and 50, at steps of 5:
 
 ```html
-<input type="number" name="a-number"  min="10" max="50" step="5" />
+<input type="number" name="a-number"  min="10" max="50" step="5">
 ```
 
 ### Hidden field
@@ -126,7 +126,7 @@ The `step` attribute helps identify the steps between different values. For exam
 Fields can be hidden from the user. They will still be sent to the server upon the form submit:
 
 ```html
-<input type="hidden" name="some-hidden-field" value="some-value" />
+<input type="hidden" name="some-hidden-field" value="some-value">
 ```
 
 This is commonly used to store values like a CSRF token, used for security and user identification, or even to detect robots sending spam, using special techniques.
@@ -138,13 +138,13 @@ It can also just be used to identify a form and its action.
 All those fields accept a predefined value. If the user does not change it, this will be the value sent to the server:
 
 ```html
-<input type="number" name="age" value="18" />
+<input type="number" name="age" value="18">
 ```
 
 If you set a placeholder, that value will appear if the user clears the input field value:
 
 ```html
-<input type="number" name="age" placeholder="Your age" value="18" />
+<input type="number" name="age" placeholder="Your age" value="18">
 ```
 
 ## Form submit
@@ -174,7 +174,7 @@ Let's see both options.
 The `required` attribute helps you with validation. If the field is not set, client-side validation fails and the browser does not submit the form:
 
 ```html
-<input type="text" name="username" required />
+<input type="text" name="username" required>
 ```
 
 ### Enforce a specific format
@@ -194,7 +194,7 @@ I recommend reading my Regular Expressions Guide at [flaviocopes.com/javascript-
  pattern="https://.*"
 
 ```html
-<input type="text" name="username" pattern="[a-zA-Z]{8}" />
+<input type="text" name="username" pattern="[a-zA-Z]{8}">
 ```
 
 ## Other fields

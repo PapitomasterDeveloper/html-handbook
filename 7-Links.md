@@ -29,7 +29,7 @@ Link tags can include other things inside them, not just text. For example, imag
 
 ```html
 <a href="https://flaviocopes.com">
-	<img src="test.jpg" />
+	<img src="test.jpg">
 </a>
 ```
 

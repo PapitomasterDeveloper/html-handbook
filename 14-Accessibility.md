@@ -57,7 +57,7 @@ A table should have a `caption` tag that describes its content:
 All images must have an `alt` tag describing the image content. It's not just a good practice, it's required by the HTML standard and your HTML without it is not validated.
 
 ```html
-<img src="dog.png" alt="picture of my dog" />
+<img src="dog.png" alt="picture of my dog">
 ```
 
 It's also good for search engines, if that's an incentive for you to add it.

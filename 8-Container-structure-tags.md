@@ -56,7 +56,7 @@ Example:
 <section>
 	<h2>A section of the page</h2>
 	<p>...</p>
-	<img ... />
+	<img ...>
 </section>
 ```
 
