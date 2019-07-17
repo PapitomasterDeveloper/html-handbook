@@ -43,7 +43,7 @@ HTML is not presentational. It's not concerned with how things *look*. Instead, 
 
 It's up to the browser to determine how things look, with the directives defined by who builds the page, with the CSS language.
 
-Now, those 2 examples I made are HTML snippets taken outside of a page context.
+Now, those two examples I made are HTML snippets taken outside of a page context.
 
 ### An HTML page structure
 
@@ -154,7 +154,7 @@ Plus, an `id` is just one value. `class` can hold multiple values, separated by 
 
 It's common to use the dash `-` to separate words in a class value, but it's just a convention.
 
-Those are just 2 of the possible attributes you can have. Some attributes are only used for one tag. They are highly specialized.
+Those are just two of the possible attributes you can have. Some attributes are only used for one tag. They are highly specialized.
 
 Other attributes can be used in a more general way. You just saw `id` and `class`, but we have other ones too, like `style` which can be used to insert inline CSS rules on an element.
 
@@ -199,7 +199,8 @@ of
            text          </p>
 ```
 
-So you can use any syntax you like. I'd say use the syntax that makes things visually more organized and easier to read.
+ 
+I'd say use the syntax that makes things visually more organized and easier to read, but you can use any syntax you like.
 
 I typically favor
 
