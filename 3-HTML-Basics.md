@@ -35,7 +35,7 @@ This HTML snippet creates a list of items using the `ul` tag, which means *unord
 
 When an HTML page is served by the browser, the tags are interpreted, and the browser renders the elements according to the rules that define their visual appearance.
 
-Some of those rules are built-in. Like how a list renders, for example. Or how a link is rendered in blue, underlined.
+Some of those rules are built-in, such as how a list renders or how a link is underlined in blue.
 
 Some other rules are set by you with CSS.
 
@@ -45,7 +45,7 @@ It's up to the browser to determine how things look, with the directives defined
 
 Now, those two examples I made are HTML snippets taken outside of a page context.
 
-### An HTML page structure
+### HTML page structure
 
 Let's make an example of a proper HTML page.
 
@@ -66,11 +66,12 @@ Then we have the `html` element, which has an opening and closing tag:
 </html>
 ```
 
-All tags come in pairs: an opening tag and a closing tag. Except a few self-closing tags which don't need a separate closing tag because they don't contain anything _in them_. The closing tag is written the same as the opening tag, but with a `/`:
+Most tags come in pairs with an opening tag and a closing tag. The closing tag is written the same as the opening tag, but with a `/`:
 
 ```html
 <sometag>some content</sometag>
 ```
+There are a few self-closing tags, which means they don't need a separate closing tag as they don't contain anything _in them_.
 
 The `html` starting tag is used at the beginning of the document, right after the document type declaration.
 
@@ -110,7 +111,7 @@ So, an element constitutes the whole _package_:
 - text content (and possibly other elements)
 - closing tag
 
-If an element has no closing tag, it is only written with the starting tag, and it cannot contain any text content.
+If an element has doesn't have a closing tag, it is only written with the starting tag, and it cannot contain any text content.
 
 That said, I might use the tag or element term in the book meaning the same thing, except if I explicitly mention starting tag or ending tag.
 
