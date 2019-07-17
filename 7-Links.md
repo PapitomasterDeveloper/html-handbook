@@ -36,7 +36,7 @@ Link tags can include other things inside them, not just text. For example, imag
 or any other elements, except other `<a>` tags.
 
 
-If you want to open the link in a new tab, you can use the target attribute:
+If you want to open the link in a new tab, you can use the `target` attribute:
 
 ```html
 <a href="https://flaviocopes.com" target="_blank">open in new tab</a>
