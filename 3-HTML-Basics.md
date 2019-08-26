@@ -111,7 +111,7 @@ So, an element constitutes the whole _package_:
 - text content (and possibly other elements)
 - closing tag
 
-If an element has doesn't have a closing tag, it is only written with the starting tag, and it cannot contain any text content.
+If an element doesn't have a closing tag, it is only written with the starting tag, and it cannot contain any text content.
 
 That said, I might use the tag or element term in the book meaning the same thing, except if I explicitly mention starting tag or ending tag.
 
