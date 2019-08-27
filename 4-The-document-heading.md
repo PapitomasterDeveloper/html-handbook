@@ -61,7 +61,7 @@ By putting it at the bottom of the page, the script is loaded and executed after
 
 My opinion is that this is now bad practice. Let `script` live in the `head` tag.
 
-In modern JavaScript we have an alternative this is more performant than keeping the script at the bottom of the page -- the `defer` attribute. This is an example that loads a `file.js` file, relative to the current URL: 
+In modern JavaScript, we have an alternative that is more performant than keeping the script at the bottom of the page -- the `defer` attribute. This is an example that loads a `file.js` file, relative to the current URL: 
 
 ```html
 <script defer src="file.js"></script> 
